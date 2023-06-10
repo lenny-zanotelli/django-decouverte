@@ -20,4 +20,14 @@ Journal de bord test technique continué à la maison pour mon continuer ma déc
     - Lancer la commande `python manage.py migrate` afin d'appliquer les changements à la BDD
 
   - Création du dossier template pour les fichiers html, j'ai créé deux vues : une page d'accueil et une page article.
-    - J'ai eu un soucis avec la page d'accueil pour son affichage avec l'error `TypeError: context must be a dict rathaer than WSGIRequest`. L'erreur a été corrigé en passant un dictionnaire vide en context dans mon fichier `views.py` dans le return de fin.
+    - J'ai eu un soucis avec la page d'accueil pour son affichage avec l'error `TypeError: context must be a dict rather than WSGIRequest`. L'erreur a été corrigé en passant un dictionnaire vide en context dans mon fichier `views.py` dans le return de fin.
+  - Après la mise en place, la création et la modification de mes fichiers pour django. Je me suis attaqué à Bootstrap4 sans utiliser le CDN. J'ai installé le code compilé JS et CSS directement dans un fichier static présent dans MyApp.
+  - Afin de prendre en compte bootstrap, j'ai connecté mes vues aux versions minifiés CSS et JS de Bootstrap.
+  - Concernant Django et afin que les fichiers static soit pris en compte j'ai modifié mon fichier `settings.py` en ajoutant les lignes suivantes :
+
+  ``` python
+  STATIC_URL = 'static/'
+  STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+  ```
+  Ces deux lignes définissent l'URL debase et le chemin pour mes fichiers statiques, ce qui me permettre de les servir correctement lors d'un déploiement en prod.
+  - J'ai beaucoup parcouru la doc Bootstrap pour partie Responsive Design et manipuler les composants de Bootstrap.
