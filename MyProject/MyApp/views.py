@@ -19,3 +19,8 @@ def article(request):
     }
     return HttpResponse(template.render(context, request))
 
+def form(request):
+    context = {}
+    template = loader.get_template("MyApp/form.html")
+    return HttpResponse(template.render(context, request))
+
