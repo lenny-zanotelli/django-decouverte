@@ -1,8 +1,19 @@
-<html>
-	<body>
-		{% for article in latest_article_list %}
-			<h1>{{ article.article_title }}</h1>
-			<p>{{ article.article_content }}</p>
-		{% endfor %}
-	</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Les Articles</title>
+	<title>Page d'accueil</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+	{% for article in latest_article_list %}
+	<h1>{{ article.article_title }}</h1>
+		<p>{{ article.article_content }}</p>
+	{% endfor %}
+	
+</body>
+

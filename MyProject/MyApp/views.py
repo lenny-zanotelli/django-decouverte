@@ -6,8 +6,9 @@ from .models import Article
 
 # Create your views here.
 def index(request):
+    context = {}
     template = loader.get_template("MyApp/index.html")
-    return HttpResponse(template.render(request))
+    return HttpResponse(template.render(context, request))
 
 
 def article(request):
