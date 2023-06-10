@@ -4,16 +4,45 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Les Articles</title>
-	<title>Page d'accueil</title>
 	{% load static %}
 	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 	<script src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
 <body>
-	{% for article in latest_article_list %}
-	<h1>{{ article.article_title }}</h1>
-		<p>{{ article.article_content }}</p>
-	{% endfor %}
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="https://my.yupeek.com/">
+				<img src="{% static 'image/logo.png'%}" width="70" height="30" alt="yupeek-logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Films</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Series</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Blog</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+	</header>
+	<main class="container">
+		{% for article in latest_article_list %}
+		<h1>{{ article.article_title }}</h1>
+			<p>{{ article.article_content }}</p>
+		{% endfor %}
+	</main>
+
 	
 </body>
 

@@ -13,4 +13,11 @@ Journal de bord test technique continué à la maison pour mon continuer ma déc
   > En relisant la >documentation officiel, les dev précisent que "project" est une collection de paramètres et d'applications pour >un siteweb particulier.
   >Un projet peut contenir plusieurs applications. Cependant, une application peut être dans de multiple projets. > Alors qu'une appl est application web qui "fait quelquechose", par exemple, un blog, une todo list etc.
 
+  - Je reçois une erreur après avoir fait une migration pour la création de mon models Article, mon ficher `models.py` de `MyApp`, une erreur de syntaxe s'était glissé sur mon `models.Model`. Suite à la correction, mon model Article a bien été créé.
+  - Les 3 étapes pour confirmer le changement d'un Model est la suivante :
+    - Effectuer un changement dans `models.py`
+    - Lancer la commande `python manage.py makmigrations` afin de créer les migrations pour les changements
+    - Lancer la commande `python manage.py migrate` afin d'appliquer les changements à la BDD
 
+  - Création du dossier template pour les fichiers html, j'ai créé deux vues : une page d'accueil et une page article.
+    - J'ai eu un soucis avec la page d'accueil pour son affichage avec l'error `TypeError: context must be a dict rathaer than WSGIRequest`. L'erreur a été corrigé en passant un dictionnaire vide en context dans mon fichier `views.py` dans le return de fin.
