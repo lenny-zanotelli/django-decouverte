@@ -35,3 +35,6 @@ Journal de bord test technique continué à la maison pour mon continuer ma déc
 
 - Lundi 12/06
   - Aujourd'hui, je vais configurer Webpack dans ce projet et ensuite, je continuerai la page form et je commencerai la feature du carousel.
+  -PLAN : 
+    - install node + npm + webpack
+    - webpack basic config
