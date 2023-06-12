@@ -1,3 +1,2 @@
-window.addEventListener('load', () => {
-	document.querySelector('.navbar').textContent = 'FROM JAVASCRIPT!';
-}); 
+import '../css/bootstrap.css';
+import '../js/bootstrap.js';
