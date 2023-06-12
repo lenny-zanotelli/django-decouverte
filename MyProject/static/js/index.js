@@ -1,3 +1,2 @@
-window.addEventListener('load', () => {
-	document.getElementById('message').textContent = 'FROM JAVASCRIPT!';
-}); 
+import '../css/bootstrap.css';
+import '../js/bootstrap.js';
