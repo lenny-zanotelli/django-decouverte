@@ -35,7 +35,7 @@ Journal de bord test technique continué à la maison pour mon continuer ma déc
 
 - Lundi 12/06
   - Aujourd'hui, je vais configurer Webpack dans ce projet et ensuite, je continuerai la page form et je commencerai la feature du carousel.
-  -PLAN : 
+  -PLAN :
     - install node + npm + webpack
     - webpack basic config
 
@@ -44,4 +44,8 @@ Journal de bord test technique continué à la maison pour mon continuer ma déc
 - création index.js que je place dans mon dossier static de mon app pour tester le script js
 - je crée un fichier webpack.config.js pour avoir le point d'entrée webpack
 - modification webpack.config.js pour placer l'output
-- 
+- j'ai du installé des loader pour webpack `style-loader, css-loader et js-loader` et installé jquery et popper.js car cela posé soucis avec bootstrap. Par ailleurs, j'ai toujours une erreur de module dans la console.
+
+Je me suis aidé de deux sources :
+<https://bugbytes.io/posts/django-and-webpack-setup-and-basic-usage/>
+<https://www.valentinog.com/blog/webpack-django/>
