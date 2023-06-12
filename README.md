@@ -5,7 +5,7 @@
 ### Clone app
 
 ``` shell
-  git clone <git@github.com>:lenny-zanotelli/django-decouverte.git
+  git clone git@github.com:lenny-zanotelli/django-decouverte.git
 
   cd django-decouverte/MyProject
 ```
