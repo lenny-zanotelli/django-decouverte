@@ -38,3 +38,10 @@ Journal de bord test technique continué à la maison pour mon continuer ma déc
   -PLAN : 
     - install node + npm + webpack
     - webpack basic config
+
+- npm init
+- npm install -DD webpack webpack-cli
+- création index.js que je place dans mon dossier static de mon app pour tester le script js
+- je crée un fichier webpack.config.js pour avoir le point d'entrée webpack
+- modification webpack.config.js pour placer l'output
+- 
